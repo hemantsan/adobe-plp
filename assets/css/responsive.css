@@ -1,0 +1,49 @@
+@media (min-width: 1280px) {
+  .navbar {
+    display: flex;
+  }
+  .container {
+    max-width: 1320px;
+  }
+  .menu-button {
+    display: none;
+  }
+  .header {
+    height: 80px;
+  }
+
+  .hero {
+    position: relative;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 340px;
+  }
+
+  .hero__copy {
+    position: relative;
+    margin: 0;
+    top: 0;
+    flex: 0 1 25%;
+    height: 100%;
+  }
+
+  .hero__copy span {
+    width: 60%;
+  }
+
+  .hero__banner {
+    flex: 0 1 75%;
+    height: 320px;
+  }
+
+  .hero__banner-image {
+    width: 100%;
+  }
+
+  .hero__copy-linebar {
+    width: 20%;
+    margin-top: 20px;
+  }
+}

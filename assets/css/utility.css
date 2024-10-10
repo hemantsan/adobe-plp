@@ -1,0 +1,7 @@
+.separator {
+  padding: 0 10px;
+}
+.divider {
+  background-color: var(--light-gray);
+  height: 4px;
+}
