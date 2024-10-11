@@ -22,7 +22,7 @@ class PlpApp {
 
     // <p class="product-item__description">${description}</p>
     return `<div class="product-item" data-product-id="product_${id}">
-        <img alt="${title}" onLoad="this.src='${image}'" class="product-item__image" src="/adobe-plp/assets/images/loader.gif"/>
+        <img alt="${title}" src="${image}" class="product-item__image" lowsrc="/adobe-plp/assets/images/loader.gif"/>
         <h4 class="product-item__name">${title}</h4>
         <span class="product-item__price">$${price}</span>
         <a href="javascript:void(0)">
