@@ -1,5 +1,5 @@
-import { PlpApp } from './assets/js/app';
-import { hideFilterDrawer, showFilterDrawer } from './assets/js/util';
+// import { PlpApp } from './assets/js/app';
+// import { hideFilterDrawer, showFilterDrawer } from './assets/js/util';
 
 const PlpAppObject = new PlpApp('plp-app');
 
