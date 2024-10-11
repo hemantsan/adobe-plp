@@ -1,5 +1,5 @@
-import { fetchCategories, fetchProducts } from './services';
-import { showLoader } from './util';
+// import { fetchCategories, fetchProducts } from './services';
+// import { showLoader } from './util';
 
 class PlpApp {
   constructor(elementId) {

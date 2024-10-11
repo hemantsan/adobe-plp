@@ -22,4 +22,4 @@ function hideFilterDrawer() {
   document.body.style.overflow = 'unset';
 }
 
-export { showLoader, showFilterDrawer, hideFilterDrawer };
+// export { showLoader, showFilterDrawer, hideFilterDrawer };

@@ -31,4 +31,4 @@ async function fetchProducts(limit, step, category, sort) {
   }
 }
 
-export { fetchCategories, fetchProducts };
+// export { fetchCategories, fetchProducts };
