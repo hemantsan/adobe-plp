@@ -22,11 +22,11 @@ class PlpApp {
 
     // <p class="product-item__description">${description}</p>
     return `<div class="product-item" data-product-id="product_${id}">
-        <img alt="${title}" onLoad="this.src='${image}'" class="product-item__image" src="/assets/images/loader.gif"/>
+        <img alt="${title}" onLoad="this.src='${image}'" class="product-item__image" src="/adobe-plp/assets/images/loader.gif"/>
         <h4 class="product-item__name">${title}</h4>
         <span class="product-item__price">$${price}</span>
         <a href="javascript:void(0)">
-        <img src="/assets/images/wishlist.png" alt="wishlist icon image" class="product-item__icon" />
+        <img src="/adobe-plp/assets/images/wishlist.png" alt="wishlist icon image" class="product-item__icon" />
         </a>
     </div>`;
   }
