@@ -40,7 +40,7 @@
 
       <section class="hero">
         <div class="hero__copy">
-          <span> Men’s Outerwear </span>
+          <h1>Men’s Outerwear</h1>
           <img class="hero__copy-linebar" src="/assets/images/line-bar.svg" alt="" />
         </div>
         <div class="hero__banner">
@@ -79,22 +79,46 @@
               </button>
             </div>
           </section>
+          <section class="filter-section">
+            <h2 class="filter-section__heading">Filters</h2>
+            <div class="filter-section__block">
+              <a class="mobile-filter-section__clear-cta" href="/">Clear All</a>
+            </div>
+            <div class="filter-section__block" id="divFilterCategory"></div>
+          </section>
           <section class="product-list__container">
-            <h5 class="product-list__total">38 Results</h5>
+            <div class="product-list__action-bar">
+              <h5 class="product-list__total"></h5>
+              <select class="product-list__sort-dropdown" name="" id="ddlProductSort">
+                <option value="price-low-to-high">Sort by Price | Low to High</option>
+                <option value="price-high-to-low">Sort by Price | High to Low</option>
+              </select>
+            </div>
             <div class="product-list__items-container">
-              <div class="product-list__items">
-                <!-- <div class="product-item">
-                  <img src="/assets/images/product.jpg" alt="product name" class="product-item__image" />
-                  <h4 class="product-item__name">Varsity Eco-friendly Jacket</h4>
-                  <span class="product-item__price">$114.00</span>
-                  <a href="javascript:void(0)">
-                    <img src="/assets/images/wishlist.png" alt="wishlist icon image" class="product-item__icon" />
-                  </a>
-                </div> -->
+              <div class="shimmer">
+                <div class="shimmer-item">
+                  <div class="shimmer-item__image"></div>
+                  <h4 class="shimmer-item__name"></h4>
+                  <span class="shimmer-item__price"></span>
+                  <img class="shimmer-item__icon" />
+                </div>
+                <div class="shimmer-item">
+                  <div class="shimmer-item__image"></div>
+                  <h4 class="shimmer-item__name"></h4>
+                  <span class="shimmer-item__price"></span>
+                  <img class="shimmer-item__icon" />
+                </div>
+                <div class="shimmer-item">
+                  <div class="shimmer-item__image"></div>
+                  <h4 class="shimmer-item__name"></h4>
+                  <span class="shimmer-item__price"></span>
+                  <img class="shimmer-item__icon" />
+                </div>
               </div>
+              <div class="product-list__items"></div>
             </div>
             <div class="product-list__footer">
-              <button type="button" class="load-more-cta">Load More</button>
+              <button type="button" class="load-more-cta" id="btnLoadMore">Load More</button>
             </div>
           </section>
         </section>
@@ -113,33 +137,52 @@
           </ul>
         </div>
         <div class="footer-item">
-          <h4 class="footer-item__heading">Account</h4>
+          <h4 class="footer-item__heading">About Us</h4>
           <ul class="footer-item__list">
-            <li><a href="">Sign In</a></li>
-            <li><a href="">Register</a></li>
+            <li><a href="">Our Story</a></li>
+            <li><a href="">Careers</a></li>
             <li><a href="">Order Status</a></li>
             <li><a href="">Returns</a></li>
           </ul>
         </div>
         <div class="footer-item">
-          <h4 class="footer-item__heading">Account</h4>
+          <h4 class="footer-item__heading">Help</h4>
           <ul class="footer-item__list">
-            <li><a href="">Sign In</a></li>
-            <li><a href="">Register</a></li>
+            <li><a href="">Contact Us</a></li>
             <li><a href="">Order Status</a></li>
             <li><a href="">Returns</a></li>
           </ul>
         </div>
         <div class="footer-item">
-          <h4 class="footer-item__heading">Account</h4>
+          <h4 class="footer-item__heading">Follow Us</h4>
           <ul class="footer-item__list">
-            <li><a href="">Sign In</a></li>
-            <li><a href="">Register</a></li>
-            <li><a href="">Order Status</a></li>
-            <li><a href="">Returns</a></li>
+            <li>
+              <a href=""
+                >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel repellendus et reiciendis numquam, minima
+                officiis facere totam</a
+              >
+            </li>
+            <li>
+              <a class="footer-item__social-link" href=""><img src="/assets/images/instagram.png" alt="" /></a
+              ><a class="footer-item__social-link" href=""><img src="/assets/images/fb.png" alt="" /></a
+              ><a class="footer-item__social-link" href=""><img src="/assets/images/twitter.png" alt="" /></a>
+            </li>
           </ul>
         </div>
       </footer>
+      <aside class="mobile-filter-section">
+        <div class="mobile-filter-section__header">
+          Filters
+          <img class="mobile-filter-section__close" src="/assets/images/close.png" alt="close drawer button" />
+        </div>
+        <div class="mobile-filter-section__block">
+          <a class="mobile-filter-section__clear-cta" href="/">Clear All</a>
+        </div>
+        <div class="mobile-filter-section__block" id="divFilterCategoryMobile"></div>
+        <div class="mobile-filter-section__footer">
+          <button type="button" class="mobile-filter-section__cta">See 17 results</button>
+        </div>
+      </aside>
     </div>
     <script type="module" src="/main.js"></script>
   </body>

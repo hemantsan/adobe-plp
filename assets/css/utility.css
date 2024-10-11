@@ -2,6 +2,54 @@
   padding: 0 10px;
 }
 .divider {
-  background-color: var(--light-gray);
+  background-color: var(--light-gray-1);
   height: 4px;
+}
+.shimmer {
+  display: none;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.shimmer-item {
+  flex: 1 0 33%;
+  margin-right: 16px;
+  position: relative;
+  background-image: linear-gradient(
+    to right,
+    var(--light-gray-1) calc(50% - 100px),
+    var(--light-gray-2) 50%,
+    var(--light-gray-1) calc(50% + 100px)
+  );
+  overflow: hidden;
+}
+.shimmer-item__name {
+  height: 50px;
+  background-color: var(--light-gray-1);
+}
+.shimmer-item__price {
+  height: 50px;
+  background-color: var(--light-gray-1);
+}
+.shimmer-item__image {
+  height: 200px;
+  background-color: var(--light-gray-1);
+}
+.shimmer-item__icon {
+  height: 25px;
+  background-color: var(--light-gray-1);
+}
+.shimmer-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: calc(200% + 200px);
+  bottom: 0;
+  background-image: inherit;
+  animation: move 1s linear infinite;
+}
+@keyframes move {
+  to {
+    transform: translateX(calc(50% + 100px));
+  }
 }
