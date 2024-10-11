@@ -1,4 +1,3 @@
-import './assets/css/style.css';
 import { PlpApp } from './assets/js/app';
 import { hideFilterDrawer, showFilterDrawer } from './assets/js/util';
 
